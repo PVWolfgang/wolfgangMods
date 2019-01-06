@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<configs>
+	
+	<remove xpath="//buff[@name='buffYuccaJuiceCooling']"/>
+	
+	<append xpath="/buffs">
+	
+		<buff name="buffYuccaJuiceCooling" description="Yucca Juice sates your thirst more than water and cools you." icon="ui_game_symbol_coffee" icon_color="255,0,0" tags="drug" tooltip="Cool yo self">
+			<stack_type value="duration"/>
+			<duration value="180"/>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.15">
+				<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+				</passive_effect>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5">
+				<requirement name="HasBuff" buff="buffHealWaterMax"/>
+				</passive_effect>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="5"/>
+			</effect_group>
+		</buff>
+	</append>
+</configs>

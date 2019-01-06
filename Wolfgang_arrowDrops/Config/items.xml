@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<configs>
+
+	<set xpath="//item[@name='ammoArrowStone']/property[@name='DropMeshfile']/@value">Items/Weapons/Ranged/Bows/WoodenBow/Arrow</set>
+	
+</configs>

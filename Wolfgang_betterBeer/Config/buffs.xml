@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configs>
+
+	<set xpath="//buff[@name='buffBeer']/duration/@value">60</set>
+	<set xpath="//buff[@name='buffBeer']//triggered_effect[@trigger='onSelfBuffStart']/@intensity">0.1</set>
+	<append xpath="//buff[@name='buffBeer']"><!-- test --></append>
+
+</configs>
