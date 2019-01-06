@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<configs>
+	<remove xpath="/items/item[@name='meleeToolAuger']/property[@name='SoundIdle']"/>
+	<remove xpath="/items/item[@name='meleeToolChainsaw']/property[@name='SoundIdle']"/>
+</configs>
