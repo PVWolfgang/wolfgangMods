@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<configs>
+	
+	<append xpath="//item[@name='drinkJarYuccaJuice']/effect_group[1]">
+		<display_value name="dHyperthermalResist" value="5"/>
+	</append>
+	
+	<set xpath="//item[@name='drinkJarYuccaJuice']//triggered_effect[@buff='buffProcessConsumables']/@buff">buffProcessConsumables,buffYuccaJuiceCooling</set>
+
+	<set xpath="//property[@value='buffYuccaJuiceCooling,buffExtinguishFireBuff']">buffExtinguishFireBuff</set>
+	
+</configs>
