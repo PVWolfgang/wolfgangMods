@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<configs>
+	<set xpath="//perk[@name='perkGreaseMonkey']/level_requirements[@level='1']/requirement/@value">3</set>
+	<set xpath="//perk[@name='perkGreaseMonkey']/level_requirements[@level='1']/requirement/@desc_key">reqIntellectLevel3</set>
+</configs>
