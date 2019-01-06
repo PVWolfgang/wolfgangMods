@@ -1,0 +1,36 @@
+<configs>
+	<append xpath="/blocks">	
+
+		
+		<block name="Map 7x7">
+			<property name="CustomIcon" value="navmap_X_i"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/maps.unity3d?mapX_6x6cl"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="CanPickup" value="true"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="MultiBlockDim" value="7,7,1"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="paper" count="1" prob="1"/>
+			<drop event="Fall" name="paper" count="0" prob="1" stick_chance="1"/>
+			<drop event="Fall" name="paper" count="1" prob=".75" stick_chance="1"/>
+		</block>
+		
+		<block name="Map 3x3">
+			<property name="CustomIcon" value="navmap_X_i"/>
+			<property name="Material" value="Mpaper"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/maps.unity3d?mapX_3x3"/>
+			<property name="Place" value="TowardsPlacerInverted"/>
+			<property name="CanPickup" value="true"/>
+			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
+			<property name="MultiBlockDim" value="3,3,1"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Destroy" name="paper" count="1" prob="1"/>
+			<drop event="Fall" name="paper" count="0" prob="1" stick_chance="1"/>
+			<drop event="Fall" name="paper" count="1" prob=".75" stick_chance="1"/>
+		</block>
+	</append>
+
+</configs>

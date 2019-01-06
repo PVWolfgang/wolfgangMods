@@ -1,0 +1,14 @@
+<configs>
+	
+		<append xpath="/recipes">
+			<recipe name="Map 7x7" count="1">
+				<ingredient name="resourcePaper" count="49"/>
+				<ingredient name="resourcePaint" count="7"/>
+			</recipe>
+			<recipe name="Map 3x3" count="1">
+				<ingredient name="resourcePaper" count="9"/>
+				<ingredient name="resourcePaint" count="3"/>
+			</recipe>
+		</append>
+	 
+</configs>
