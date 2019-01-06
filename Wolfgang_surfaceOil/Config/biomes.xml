@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<configs>
+	<append xpath="//biome[@name='desert']//layer[@blockname='terrDesertGround']">
+		<resource blockname="terrOreOilDeposit" prob=".01" rwgGenerationType="all"/>
+	</append>
+	
+	<remove xpath="//biome[@name='desert']//layer[@blockname='terrDesertGround']/resource[@blockname='terrOreSandPlusIron']"/>
+</configs>
+
+<!--
+
+1 surface sand
+6 sandstone
+* deep
+1 deep
+10 deep
+1 deep
+3 bedrock
+
+<layers>
+
+	<layer depth="1" blockname="terrDesertGround">
+		<resource blockname="terrOreSandPlusIron" prob="0.071" rwgGenerationType="all"/>
+	</layer>
+	
+	<layer depth="6" blockname="terrSandStone">
+		<resource blockname="terrOreSandPlusIron" prob="0.321" rwgGenerationType="all"/>
+	</layer>
+	
+	<layer depth="*" blockname="terrSandStone">
+		<resource blockname="terrOreIron" prob="0.3100" rwgGenerationType="all"/>
+		<resource blockname="terrOreSandPlusIron" prob="0.4130" rwgGenerationType="all"/>
+		<resource blockname="terrOreSilver"  prob="0.00030" rwgGenerationType="all"/>
+		<resource blockname="terrOreGold"    prob="0.00020" rwgGenerationType="all"/>
+		<resource blockname="terrOreDiamond" prob="0.00010" rwgGenerationType="all"/>
+	</layer>
+	
+	<layer depth="1" blockname="terrSandStone">
+		<resource blockname="terrOreSandPlusOil" prob="0.4130" rwgGenerationType="all"/>
+	</layer>
+	
+	<layer depth="10" blockname="terrSandStone">
+		<resource blockname="terrOreOilDeposit" prob="0.3100" rwgGenerationType="all"/>
+		<resource blockname="terrOreSandPlusOil" prob="0.4130" rwgGenerationType="all"/>
+		<resource blockname="terrOreSilver"  prob="0.00030" rwgGenerationType="all"/>
+		<resource blockname="terrOreGold"    prob="0.00020" rwgGenerationType="all"/>
+		<resource blockname="terrOreDiamond" prob="0.00010" rwgGenerationType="all"/>
+	</layer>
+	
+	<layer depth="1" blockname="terrSandStone"/>
+	
+	<layer depth="3" blockname="terrBedrock"/>
+	
+</layers>
+
+-->

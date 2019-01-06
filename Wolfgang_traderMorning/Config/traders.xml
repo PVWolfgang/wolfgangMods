@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<configs>
+
+<!--	<set xpath="/traders/@quality_mod">0.6,6</set> -->
+	<set xpath="/traders/trader_info[@id='1']/@open_time">4:20</set>
+</configs>
