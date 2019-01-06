@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configs>
+
+	<set xpath="//block[@name='flagstoneMaster']//property[@name='UpgradeHitCount']/@value">4</set>
+	
+<!--	/blocks/block[77]//property[12]@value -->
+
+</configs>
