@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="Wolfgang_A16Nailgun"/>
+			<Description value="Reverted nailgun repair speed to Alpha 16.4 (4x per second)"/>
+			<Author value="PVWolfgang"/>
+			<Version value="1.0"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>
