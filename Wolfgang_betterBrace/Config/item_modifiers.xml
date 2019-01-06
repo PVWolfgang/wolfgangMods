@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<configs>
+
+	<set xpath="//item_modifier[@name='modMeleeStructuralBrace']/@modifier_tags">neck</set>
+
+</configs>
