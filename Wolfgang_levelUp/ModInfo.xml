@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="Wolfgang_levelUp"/>
+			<Description value="Lowers the Xp required to level, but slightly raises the multiplier"/>
+			<Author value="PVWolfgang"/>
+			<Version value="1.0"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>

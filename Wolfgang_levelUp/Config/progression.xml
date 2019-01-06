@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<configs>
+
+	<set xpath="//level/@exp_to_level">5000</set>
+	<set xpath="//level/@experience_multiplier">1.015</set>
+	<append xpath="//level"><!-- test --></append>
+
+</configs>
