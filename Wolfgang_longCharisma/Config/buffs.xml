@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<configs>
+	<set xpath="//buff[@name='buffPerkCharismaticNature']//duration/@value">180</set>
+</configs>

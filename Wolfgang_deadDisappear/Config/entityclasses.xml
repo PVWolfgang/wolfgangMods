@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<configs>
+	<set xpath="//entity_class[@name='zombieTemplateMale']/property[@name='TimeStayAfterDeath']/@value">6</set> <!-- Zombie dead bodies stay for 6 seconds -->
+	<set xpath="//entity_class[@name='Backpack']/property[@name='TimeStayAfterDeath']/@value">10800</set> <!-- Backpacks stay for 3 hours -->
+	<set xpath="//entity_class[starts-with(@name, 'EntityLootContainer')]/property[@name='TimeStayAfterDeath']/@value">1200</set> <!-- Zombie loot stays for 20 minutes -->
+</configs>

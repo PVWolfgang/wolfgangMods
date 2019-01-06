@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<configs>
+	<remove xpath="//decoration[@blockname='treeCactus04']"/>
+</configs>
