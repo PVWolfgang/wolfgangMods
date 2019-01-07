@@ -1,0 +1,145 @@
+<configs>
+	<append xpath="/items">	
+				
+		<item name="GSB Banner">
+			<property name="Tags" value="blunt,melee,light,tool,weapon,meleeWeapon,perkStayDown"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="12"/>
+			<property name="CustomIcon" value="gregflagicon"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerGi"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerGi"/>
+			<property name="Material" value="Miron"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="10"/>
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="Sphere" value="0.1"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Blockname" value="GSB Flag"/>
+			</property>
+			<property name="Group" value="Basics,Decor/Miscellaneous"/>
+
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="MaxRange" operation="base_set" value="3"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="5"/> <!-- meleeToolTorch -->
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.17 -->
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Party Buff +2 Agility"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Party Buff +2 Agility"/>
+			</effect_group>
+		</item>
+		
+		<item name="Dex Banner">
+			<property name="Tags" value="blunt,melee,light,tool,weapon,meleeWeapon,perkStayDown"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="HoldType" value="12"/>
+			<property name="CustomIcon" value="wolfyinIconZ"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerDi"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerDi"/>
+			<property name="Material" value="Miron"/>
+			<property name="Stacknumber" value="1"/>
+			<property name="FuelValue" value="25"/>
+			<property name="EconomicValue" value="10"/>
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="Sphere" value="0.1"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+			</property>
+			<property class="Action1">
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Blockname" value="Dex Wolf Flag"/>
+			</property>
+			<property name="Group" value="Basics,Decor/Miscellaneous"/>
+
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="MaxRange" operation="base_set" value="2.4"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="12"/> <!-- meleeToolTorch -->
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.17 -->
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="4"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Party Buff +2 Fortitude"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Party Buff +2 Fortitude"/>
+			</effect_group>
+		</item>
+		
+		<item name="Wolfgang Banner">
+			<property name="Tags" value="blunt,club,clubIron,melee,light,weapon,meleeWeapon,perkStayDown"/>
+			<property name="DisplayType" value="melee"/>
+			<property name="Group" value="Ammo/Weapons,Basics"/>
+			<property name="CustomIcon" value="WolfgangIcon1"/>
+			<property name="Meshfile" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerWi"/>
+			<property name="DropMeshfile" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerWi"/>
+			<property name="HoldType" value="12"/>
+			<property name="Material" value="Miron"/>
+			<property name="RepairTools" value="resourceScrapIron"/>
+			<property name="SoundDestroy" value="wooddestroy1"/>
+			<property name="RepairExpMultiplier" value="5.5"/>
+			<property name="ActionSkillGroup" value="Destruction"/>
+			<property name="CraftingSkillGroup" value="attIntellect"/>
+			<property name="EconomicBundleSize" value="1"/>
+			<property name="EconomicValue" value="350"/>
+			<property name="FuelValue" value="250"/>
+
+			<property class="Action0">
+				<property name="Class" value="DynamicMelee"/>
+				<property name="Sound_start" value="swoosh"/>
+				<property name="Sphere" value="0.1"/>
+				<property name="ToolCategory.harvestingTools" value=".5" param1="1"/>
+			</property>
+
+			<property class="Action1">
+				<property name="Class" value="PlaceAsBlock"/>
+				<property name="Blockname" value="Wolfgang Flag"/>
+			</property>
+
+			<effect_group name="Base Effects" tiered="false">
+				<passive_effect name="MaxRange" operation="base_set" value="3"/>
+				<passive_effect name="BlockRange" operation="base_set" value="3"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="5"/>
+				<passive_effect name="BlockDamage" operation="base_set" value="5"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="0" tags="wood"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="earth"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
+				<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
+				<passive_effect name="AttacksPerMinute" operation="base_set" value="90"/>
+				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
+				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1"/>
+			</effect_group>
+
+			<effect_group tiered="false">
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Party Buff +50% XP Gain"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Party Buff +50% XP Gain"/>
+			</effect_group>
+			
+		</item>
+	</append>
+</configs>

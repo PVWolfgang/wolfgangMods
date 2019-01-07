@@ -1,0 +1,61 @@
+<configs>
+	<append xpath="/buffs" >
+		<buff name="Party Buff +2 Fortitude" icon="ui_game_symbol_fire" icon_color="255,0,255" icon_blink="true" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value=".7"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="Dexter's Fortitude (+2)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="Dexter's Fortitude (+2)"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="Dexter's Fortitude (+2)" icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<update_rate value="1.2"/>
+			<effect_group>
+				<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="2" />
+			</effect_group>
+		</buff>
+		
+		<buff name="Party Buff +2 Agility" icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value=".7"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="Greg's Agility (+2)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="Greg's Agility (+2)"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="Greg's Agility (+2)" icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="60"/>
+			<update_rate value="1.2"/>
+			<effect_group>
+				<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="2" />
+			</effect_group>
+		</buff>
+		
+		<buff name="Party Buff +50% XP Gain" icon="ui_game_symbol_fire" icon_color="0,255,0" icon_blink="true" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value=".7"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="15" buff="Wolfgang's Wisdom (+50% XP)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="15" buff="Wolfgang's Wisdom (+50% XP)"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="Wolfgang's Wisdom (+50% XP)" icon="ui_game_symbol_fire" icon_color="0,255,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="30"/>
+			<update_rate value="1.2"/>
+			<effect_group>
+				<passive_effect name="PlayerExpGain" operation="perc_add" value="0.5" />
+				<display_value name="dPlayerExpGain" value=".5"/>
+			</effect_group>
+		</buff>
+	</append>
+</configs>

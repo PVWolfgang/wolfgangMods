@@ -1,0 +1,40 @@
+<configs>
+	<append xpath="/blocks">
+	
+		<block name="Wolfgang Flag">
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerWb"/>
+			<property name="CustomIcon" value="WolfgangIcon1"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,5,1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OnlySimpleRotations" value="true"/> 
+			<property name="CanPickup" value="true"/>
+			<drop event="Harvest" name="Wolfgang Banner" count="1" tag="allHarvest"/>			
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<drop event="Destroy" count="0"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="0"/>
+			<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
+		</block>
+
+		<block name="GSB Flag">
+			<property name="Extends" value="Wolfgang Flag"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerGb"/>
+			<property name="CustomIcon" value="gregflagicon"/>
+			<drop event="Harvest" name="GSB Banner" count="1" tag="allHarvest"/>
+		</block>
+		
+		<block name="Dex Wolf Flag">
+			<property name="Extends" value="Wolfgang Flag"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerDb"/>
+			<property name="CustomIcon" value="wolfyinIconZ"/>
+			<drop event="Harvest" name="Dex Banner" count="1" tag="allHarvest"/>
+		</block>
+		
+	</append>
+</configs>
