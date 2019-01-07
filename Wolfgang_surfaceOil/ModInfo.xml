@@ -5,7 +5,6 @@
 			<Description value="Adds patches of oil to the surface in the desert"/>
 			<Author value="PVWolfgang"/>
 			<Version value="1.0"/>
-			<Type value="Modlet"/>
 			<Website value=""/>
 		</ModInfo>
 	</xml>
