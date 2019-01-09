@@ -3,7 +3,7 @@
 	<ModInfo>
 		<Name value="WolfgangC_Maps" />
 		<Description value="Maps of Navezgane, special thanks to Curbolt (map image) and Xyth (Unity) - Contains custom content, install on server and client"/>
-		<Author value="Xyth, Curbolt, PVWolfgang"/>
+		<Author value="PVWolfgang, ft. Xyth & Curbolt"/>
 		<Version value="1.0"/>
 		<Website value="https://www.curbolt.ml/"/>
 	</ModInfo>
