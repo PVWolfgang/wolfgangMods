@@ -12,7 +12,8 @@
 			<property name="Path" value="solid"/>
 			<property name="StabilitySupport" value="false"/>
 			<property name="OnlySimpleRotations" value="true"/> 
-			<property name="CanPickup" value="true" param1="Wolfgang Banner"/>		
+			<property name="CanPickup" value="true" param1="Wolfgang Banner"/>
+			<drop event="Harvest" name="Wolfgang Banner" count="1" tag="allHarvest"/>			
 			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<drop event="Destroy" count="0"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="0"/>
@@ -33,6 +34,14 @@
 			<property name="Shape" value="ModelEntity"/>
 			<property name="Model" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerDb"/>
 			<property name="CustomIcon" value="wolfyinIconZ"/>
+		</block>
+		
+		<block name="Pakr Flag">
+			<property name="Extends" value="Wolfgang Flag"/>
+			<property name="CanPickup" value="true" param1="Pakr Banner"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/BannerWolfgang.unity3d?BannerPb"/>
+			<property name="CustomIcon" value="pnicon"/>
 		</block>
 		
 	</append>

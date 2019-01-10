@@ -1,6 +1,5 @@
 <configs>
 	<append xpath="/recipes" >
-		</recipe>
 		<recipe name="Wolfgang Banner" count="1">
 			<ingredient name="resourcePaint" count="4"/>
 			<ingredient name="resourceCloth" count="4"/>
@@ -16,6 +15,13 @@
 			<ingredient name="casinoCoin" count="500"/>
 		</recipe>
 		<recipe name="Dex Banner" count="1">
+			<ingredient name="resourcePaint" count="4"/>
+			<ingredient name="resourceCloth" count="4"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resourceMetalPipe" count="5"/>
+			<ingredient name="casinoCoin" count="500"/>
+		</recipe>
+		<recipe name="Pakr Banner" count="1">
 			<ingredient name="resourcePaint" count="4"/>
 			<ingredient name="resourceCloth" count="4"/>
 			<ingredient name="resourceDuctTape" count="1"/>

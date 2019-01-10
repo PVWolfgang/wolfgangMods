@@ -57,5 +57,23 @@
 				<display_value name="dPlayerExpGain" value=".5"/>
 			</effect_group>
 		</buff>
+		
+		<buff name="Party Buff +25% Sneak" icon="ui_game_symbol_fire" icon_color="0,255,255" icon_blink="true" remove_on_death="false">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<update_rate value=".7"/>
+
+		</buff>
+		
+		<buff name="Pakr's Pride" icon="ui_game_symbol_fire" icon_color="0,255,0" icon_blink="true">
+			<stack_type value="replace"/>
+			<duration value="30"/>
+			<update_rate value="1.2"/>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="90"/>
+				<passive_effect name="LightMultiplier" operation="perc_subtract" value="0.25"/>
+				<passive_effect name="NoiseMultiplier" operation="perc_subtract" value="0.25"/>
+			</effect_group>
+		</buff>
 	</append>
 </configs>
