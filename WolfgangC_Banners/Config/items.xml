@@ -36,12 +36,12 @@
 				<passive_effect name="AttacksPerMinute" operation="base_set" value="50"/> <!-- A16 1.17 -->
 				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="12" tags="primary"/>
-				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1"/>
 			</effect_group>
 
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Party Buff +2 Agility"/>
-				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Party Buff +2 Agility"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Greg Party Buff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Greg Party Buff"/>
 			</effect_group>
 		</item>
 		
@@ -81,12 +81,12 @@
 				<passive_effect name="HarvestCount" operation="base_set" value="0" tags="allToolsHarvest"/>
 				<passive_effect name="StaminaLoss" operation="base_set" value="16.8" tags="primary"/>
 				<passive_effect name="HypothermalResist" operation="base_add" value="4"/>
-				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="ModSlots" operation="base_set" value="1"/>
 			</effect_group>
 
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Party Buff +2 Fortitude"/>
-				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Party Buff +2 Fortitude"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Dexter Party Buff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Dexter Party Buff"/>
 			</effect_group>
 		</item>
 		
@@ -136,8 +136,8 @@
 			</effect_group>
 
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Party Buff +50% XP Gain"/>
-				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Party Buff +50% XP Gain"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Wolfgang Party Buff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Wolfgang Party Buff"/>
 			</effect_group>
 			
 		</item>
@@ -188,8 +188,8 @@
 			</effect_group>
 
 			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="Party Buff +25% Sneak"/>
-				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="Party Buff +25% Sneak"/>
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="PakrNinja Party Buff"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="PakrNinja Party Buff"/>
 			</effect_group>
 			
 		</item>
