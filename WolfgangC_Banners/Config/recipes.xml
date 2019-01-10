@@ -1,39 +1,22 @@
 <configs>
 	<append xpath="/recipes" >
-		<recipe name="Wolfgang Flag">
-			<ingredient name="resourcePaint" count="1"/>
-			<ingredient name="resourceCloth" count="4"/>
-			<ingredient name="resourceDuctTape" count="1"/>
-			<ingredient name="resourceMetalPipe" count="5"/>
-		</recipe>
-		<recipe name="GSB Flag" count="1">
-			<ingredient name="resourcePaint" count="1"/>
-			<ingredient name="resourceCloth" count="4"/>
-			<ingredient name="resourceDuctTape" count="1"/>
-			<ingredient name="resourceMetalPipe" count="5"/>
-		</recipe>
-		<recipe name="Dex Wolf Flag" count="1">
-			<ingredient name="resourcePaint" count="1"/>
-			<ingredient name="resourceCloth" count="4"/>
-			<ingredient name="resourceDuctTape" count="1"/>
-			<ingredient name="resourceMetalPipe" count="5"/>
 		</recipe>
 		<recipe name="Wolfgang Banner" count="1">
-			<ingredient name="resourcePaint" count="1"/>
+			<ingredient name="resourcePaint" count="4"/>
 			<ingredient name="resourceCloth" count="4"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 			<ingredient name="resourceMetalPipe" count="5"/>
 			<ingredient name="casinoCoin" count="500"/>
 		</recipe>
 		<recipe name="GSB Banner" count="1">
-			<ingredient name="resourcePaint" count="1"/>
+			<ingredient name="resourcePaint" count="4"/>
 			<ingredient name="resourceCloth" count="4"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 			<ingredient name="resourceMetalPipe" count="5"/>
 			<ingredient name="casinoCoin" count="500"/>
 		</recipe>
 		<recipe name="Dex Banner" count="1">
-			<ingredient name="resourcePaint" count="1"/>
+			<ingredient name="resourcePaint" count="4"/>
 			<ingredient name="resourceCloth" count="4"/>
 			<ingredient name="resourceDuctTape" count="1"/>
 			<ingredient name="resourceMetalPipe" count="5"/>
