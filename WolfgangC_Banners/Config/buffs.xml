@@ -7,10 +7,11 @@
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="Dexter's Defense (+2 Fortitude)"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="30" buff="Dexter's Defense (+2 Fortitude)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="Dexter's Defense (+2 Fortitude)"/>
 			</effect_group>
 		</buff>
 		
-		<buff name="Dexter's Defense (+2 Fortitude)" icon="ui_game_symbol_fire" icon_color="255,0,0" icon_blink="true">
+		<buff name="Dexter's Defense (+2 Fortitude)" icon="ui_game_symbol_fire" icon_color="255,0,255" icon_blink="true">
 			<stack_type value="replace"/>
 			<duration value="60"/>
 			<update_rate value="1.2"/>
@@ -24,12 +25,13 @@
 			<duration value="0"/>
 			<update_rate value=".7"/>
 			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="Greg's Grace (+2 Agility)"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="Greg's Grace (+2 Agility)"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="30" buff="Greg's Grace (+2 Agility)"/>
 			</effect_group>
 		</buff>
 		
-		<buff name="Greg's Grace (+2 Agility)" icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true">
+		<buff name="Greg's Grace (+2 Agility)" description="Greg Scott Bailey is an artist and streamer. He harnesses the agility of the falcon and provides you with a +2 bonus." icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true">
 			<stack_type value="replace"/>
 			<duration value="60"/>
 			<update_rate value="1.2"/>
@@ -45,6 +47,7 @@
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="Wolfgang's Wisdom (+50% XP)"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="30" buff="Wolfgang's Wisdom (+50% XP)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="Wolfgang's Wisdom (+50% XP)"/>
 			</effect_group>
 		</buff>
 		
@@ -65,6 +68,7 @@
 			<effect_group>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="30" buff="Pakr's Pride (+25% Sneak)"/>
 				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="otherAOE" range="30" buff="Pakr's Pride (+25% Sneak)"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="Pakr's Pride (+25% Sneak)"/>
 			</effect_group>
 		</buff>
 		
