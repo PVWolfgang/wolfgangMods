@@ -13,7 +13,7 @@
 		
 		<buff name="Dexter's Defense (+2 Fortitude)" icon="ui_game_symbol_fire" icon_color="255,0,255" icon_blink="true">
 			<stack_type value="replace"/>
-			<duration value="60"/>
+			<duration value="12"/>
 			<update_rate value="1.2"/>
 			<effect_group>
 				<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="2" />
@@ -31,9 +31,9 @@
 			</effect_group>
 		</buff>
 		
-		<buff name="Greg's Grace (+2 Agility)" description="Greg Scott Bailey is an artist and streamer. He harnesses the agility of the falcon and provides you with a +2 bonus." icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true">
+		<buff name="Greg's Grace (+2 Agility)" icon="ui_game_symbol_fire" icon_color="0,0,255" icon_blink="true">
 			<stack_type value="replace"/>
-			<duration value="60"/>
+			<duration value="12"/>
 			<update_rate value="1.2"/>
 			<effect_group>
 				<passive_effect name="AttributeLevel" tags="attAgility" operation="base_add" value="2" />
@@ -53,7 +53,7 @@
 		
 		<buff name="Wolfgang's Wisdom (+50% XP)" icon="ui_game_symbol_fire" icon_color="0,255,0" icon_blink="true">
 			<stack_type value="replace"/>
-			<duration value="30"/>
+			<duration value="12"/>
 			<update_rate value="1.2"/>
 			<effect_group>
 				<passive_effect name="PlayerExpGain" operation="perc_add" value="0.5" />
@@ -74,7 +74,7 @@
 		
 		<buff name="Pakr's Pride (+25% Sneak)" icon="ui_game_symbol_fire" icon_color="0,255,255" icon_blink="true">
 			<stack_type value="replace"/>
-			<duration value="30"/>
+			<duration value="12"/>
 			<update_rate value="1.2"/>
 			<effect_group>
 				<requirement name="CVarCompare" cvar="_lightlevel" operation="LTE" value="90"/>
