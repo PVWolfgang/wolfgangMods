@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<configs>
+
+	<!-- 8 in game hours per tier, after 1 game day you are in trouble -->
+<!--	<set xpath="//buff[@name='buffIllInfection1' or @name='buffIllInfection2' or @name='buffIllInfection3']">1200</set> -->
+	
+	<!-- 12 in game hours for tiers 1 and 2, 24 hours for tier 3 -->
+	<set xpath="//buff[@name='buffIllInfection1' or @name='buffIllInfection2' or @name='buffIllInfection3']">1800</set>
+	
+	<set xpath="//buff[@name='buffIllInfection3']/duration/@value">3600</set>
+	
+	<!-- 24 in game hours per tier -->
+<!--	<set xpath="//buff[@name='buffIllInfection1' or @name='buffIllInfection2' or @name='buffIllInfection3']/">3600</set> -->
+	
+</configs>
