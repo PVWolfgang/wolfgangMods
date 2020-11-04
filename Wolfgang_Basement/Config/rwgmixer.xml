@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<wolfgang>
+<!-- Prefab list (more spawns) -->
+<!--	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabList']">
+		<prefab name="-wgBasement01"/>
+	</append>
+-->
+<!-- 8k RWG -->
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabGroup8k']">
+		<prefab name="-wgBasement01" max_count="3" min_repeat_distance="2000" />
+	</append>
+<!-- 4k RWG -->
+	<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='prefabGroup4k']">
+		<prefab name="-wgBasement01" max_count="2" min_repeat_distance="1000" />
+	</append>
+</wolfgang>

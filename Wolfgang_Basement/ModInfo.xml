@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="Wolfgang_Basement"/>
+			<Description value="Adds Wolfgang's Basement prefab to RWG."/>
+			<Author value="PVWolfgang"/>
+			<Version value="A19.2 Stable" compat="A19.2"/>
+			<Website value="https://twitch.tv/pv_wolfgang"/>
+		</ModInfo>
+	</xml>
